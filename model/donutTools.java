@@ -25,5 +25,11 @@ public class donutTools {
 		desc += "The donut name is " + flavor + shape + hole;
 		return desc;
 	}
+	public String getShape() {
+		return shape;
+	}
+	public String getFlavor() {
+		return flavor;
+	}
 	
 }
