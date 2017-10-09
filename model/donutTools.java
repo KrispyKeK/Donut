@@ -1,16 +1,12 @@
 package donut.model;
 
 public class donutTools {
-	
-	private boolean hasGlaze;
-	private boolean isSprinkle;
+
 	private String shape;
 	private String flavor;
 	private int hole;
 	
 	public donutTools() {
-		this.hasGlaze = false;
-		this.isSprinkle = false;
 		this.shape = "round";
 		this.flavor = "plain";
 		this.hole = 1;

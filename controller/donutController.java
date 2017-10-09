@@ -1,8 +1,9 @@
 package donut.controller;
-import java.util.*;
 
+import java.util.*;
 import donut.model.donutTools;
 import donut.view.donutDisplay;
+
 public class donutController {
 	//creates a list, but does not intialize it
 	private List<donutTools> dl;
@@ -75,6 +76,7 @@ public class donutController {
 		popup.displayText("You've added this donut. " + newDonut.toString());
 	}
 	private void getList() {
+		popup.displayText(dl.toString());
 		String grab = popup.getResponse("Find a Donut||Enter a number: ");
 		int grabNum = 0;
 		try {
@@ -90,5 +92,11 @@ public class donutController {
 		catch(Exception e) {
 			popup.displayText("Can you not not do not that?");
 		}
+	}
+	public ArrayList<donutTools> getDonutList(){
+		return(ArrayList<donutTools>) dl;
+	}
+	public donutDisplay getDisplay() {
+		return popup;
 	}
 }
