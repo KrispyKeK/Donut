@@ -22,7 +22,7 @@ public class donutTools {
 	}
 	public String toString() {
 		String desc ="";
-		desc += "The donut name is " + flavor + shape + hole;
+		desc += "The donut name is " + flavor + " and its shape is " + shape + " with these many holes " + hole;
 		return desc;
 	}
 	public String getShape() {
@@ -31,5 +31,7 @@ public class donutTools {
 	public String getFlavor() {
 		return flavor;
 	}
-	
+	public int getHoles() {
+		return hole;
+	}
 }
