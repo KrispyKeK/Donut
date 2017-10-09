@@ -34,6 +34,9 @@ public class donutController {
 			//	}
 			popup.displayText(dl.get(index).toString());
 		}
+		for (int reverse = dl.size()- 1; reverse >= 0; reverse--) {
+			popup.displayText("The list backwards: " + dl.get(reverse).getFlavor());
+		}
 	}
 	private void fillList() {
 
@@ -77,7 +80,8 @@ public class donutController {
 		try {
 			grabNum = Integer.parseInt(grab);
 			if (grabNum < dl.size()) {
-				popup.displayText(dl.get(grabNum).getFlavor() + " Is the flavor of you wanted to see");
+				popup.displayText(dl.get(grabNum).getFlavor() + " Is the donut of you wanted to see");
+				popup.displayText(dl.get(grabNum).toString());
 			}
 			else {
 				popup.displayText("404 Cannot Find Donut");
