@@ -76,7 +76,6 @@ public class donutController {
 		popup.displayText("You've added this donut. " + newDonut.toString());
 	}
 	private void getList() {
-		popup.displayText(dl.toString());
 		String grab = popup.getResponse("Find a Donut||Enter a number: ");
 		int grabNum = 0;
 		try {
